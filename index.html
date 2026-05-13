@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CodeAlpha | Professional Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <!-- ========== STICKY HEADER ========== -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">CodeAlpha</span>
+                    <span class="logo-sub">Calculator</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-nav="home">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#about" class="nav-link" data-nav="about">
+                    <i class="fas fa-info-circle"></i> About
+                </a>
+                <a href="#features" class="nav-link" data-nav="features">
+                    <i class="fas fa-star"></i> Features
+                </a>
+                <a href="#codealpha" class="nav-link" data-nav="codealpha">
+                    <i class="fas fa-code"></i> CodeAlpha
+                </a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <div class="container">
+            <!-- Hero Section (Home) -->
+            <section id="home" class="hero-section">
+                <div class="hero-badge">
+                    <i class="fas fa-crown"></i> CodeAlpha Internship | Task 2
+                </div>
+                <h1>Professional <span class="gradient-text">Calculator</span></h1>
+                <p class="hero-description">Modern calculator with arithmetic operations, keyboard support & theme switching</p>
+            </section>
+
+            <!-- Calculator Card -->
+            <div class="calculator-card">
+                <!-- Display Screen -->
+                <div class="display-section">
+                    <div class="expression" id="expression">0</div>
+                    <div class="result" id="result">0</div>
+                </div>
+
+                <!-- Buttons Grid -->
+                <div class="buttons-grid">
+                    <button class="calc-btn function" data-value="clear">
+                        <i class="fas fa-trash-alt"></i> AC
+                    </button>
+                    <button class="calc-btn function" data-value="delete">
+                        <i class="fas fa-backspace"></i> DEL
+                    </button>
+                    <button class="calc-btn function" data-value="%">
+                        <i class="fas fa-percent"></i> %
+                    </button>
+                    <button class="calc-btn operator" data-value="/">
+                        <i class="fas fa-divide"></i> ÷
+                    </button>
+
+                    <button class="calc-btn number" data-value="7">7</button>
+                    <button class="calc-btn number" data-value="8">8</button>
+                    <button class="calc-btn number" data-value="9">9</button>
+                    <button class="calc-btn operator" data-value="*">
+                        <i class="fas fa-times"></i> ×
+                    </button>
+
+                    <button class="calc-btn number" data-value="4">4</button>
+                    <button class="calc-btn number" data-value="5">5</button>
+                    <button class="calc-btn number" data-value="6">6</button>
+                    <button class="calc-btn operator" data-value="-">
+                        <i class="fas fa-minus"></i> -
+                    </button>
+
+                    <button class="calc-btn number" data-value="1">1</button>
+                    <button class="calc-btn number" data-value="2">2</button>
+                    <button class="calc-btn number" data-value="3">3</button>
+                    <button class="calc-btn operator" data-value="+">
+                        <i class="fas fa-plus"></i> +
+                    </button>
+
+                    <button class="calc-btn number zero" data-value="0">0</button>
+                    <button class="calc-btn number" data-value=".">.</button>
+                    <button class="calc-btn equals" data-value="=">
+                        <i class="fas fa-equals"></i> =
+                    </button>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <h2><i class="fas fa-info-circle"></i> About This Calculator</h2>
+                <div class="about-content">
+                    <p>This professional calculator is built as part of the <strong>CodeAlpha Frontend Internship</strong> program. It demonstrates modern web development practices including:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Clean and responsive UI design</li>
+                        <li><i class="fas fa-check-circle"></i> JavaScript arithmetic operations</li>
+                        <li><i class="fas fa-check-circle"></i> Keyboard support for all functions</li>
+                        <li><i class="fas fa-check-circle"></i> Light/Dark theme with localStorage</li>
+                        <li><i class="fas fa-check-circle"></i> Error handling and edge cases</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <h2><i class="fas fa-star"></i> Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Basic Operations</h3>
+                        <p>Addition, Subtraction, Multiplication, Division</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-keyboard"></i></div>
+                        <h3>Keyboard Support</h3>
+                        <p>Full keyboard control for faster calculations</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-moon"></i></div>
+                        <h3>Light/Dark Theme</h3>
+                        <p>Toggle between light and dark mode</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-percent"></i></div>
+                        <h3>Percentage & Decimal</h3>
+                        <p>Support for percentage and decimal operations</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CodeAlpha Section -->
+            <section id="codealpha" class="codealpha-section">
+                <h2><i class="fas fa-code"></i> About CodeAlpha</h2>
+                <div class="codealpha-content">
+                    <p>CodeAlpha is a leading software development company focused on automation, continuous integration, and scalable infrastructure. The internship program empowers students to work with modern web technologies and real-world projects.</p>
+                    <div class="codealpha-highlights">
+                        <span><i class="fas fa-trophy"></i> Internship Certificate</span>
+                        <span><i class="fas fa-qrcode"></i> QR Verified</span>
+                        <span><i class="fas fa-briefcase"></i> Job Placement Support</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Keyboard Support Info -->
+            <div class="keyboard-info">
+                <div class="info-card">
+                    <i class="fas fa-keyboard"></i>
+                    <span>Keyboard Support Active</span>
+                    <div class="keyboard-shortcuts">
+                        <kbd>0-9</kbd> <kbd>.</kbd> <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd>
+                        <kbd>%</kbd> <kbd>Enter</kbd> <kbd>=</kbd> <kbd>Esc</kbd> <kbd>Backspace</kbd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========== PROFESSIONAL FOOTER ========== -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <!-- Column 1: Logo & Description -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <i class="fas fa-calculator"></i>
+                    <span>CodeAlpha</span>
+                </div>
+                <p class="footer-description">
+                    Professional calculator built for CodeAlpha Frontend Internship.
+                    Clean UI, keyboard support, and modern design.
+                </p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h4><i class="fas fa-link"></i> Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#codealpha">CodeAlpha</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Internship -->
+            <div class="footer-column">
+                <h4><i class="fas fa-graduation-cap"></i> Internship</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Frontend Dev</a></li>
+                    <li><a href="#">Build a Calculator</a></li>
+                    <li><a href="#">Task 2</a></li>
+                    <li><a href="#">Certificate</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Social Links Only -->
+            <div class="footer-column">
+                <h4><i class="fas fa-share-alt"></i> Follow Us</h4>
+                <div class="footer-social">
+                    <a href="https://github.com/codealpha-tech" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/codealpha_tech" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/codealpha_tech" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/codealpha" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="social-note">Connect with us on social media for updates</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 CodeAlpha | All Rights Reserved | <i class="fas fa-heart" style="color: #ff6b6b;"></i> Frontend Internship Project</p>
+            <p class="footer-credits">Task 2: Professional Calculator</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
