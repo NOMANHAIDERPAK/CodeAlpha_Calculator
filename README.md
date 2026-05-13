@@ -13,4 +13,7 @@ A responsive and interactive web-based calculator built using HTML, CSS, and Jav
 * **HTML5:** For the structure.
 * **CSS3:** For custom styling and layout.
 * **JavaScript (ES6):** For calculation logic and keyboard event handling.
-
+* 
+## 🚀 Live Demo
+[Check it out here!]
+https://nomanhaiderpak.github.io/CodeAlpha_Calculator/
